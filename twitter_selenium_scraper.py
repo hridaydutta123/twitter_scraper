@@ -72,7 +72,9 @@ def blogxtract(url):
     
     #call dynamic page scroll function here
     soup = BeautifulSoup(twt_scroller(url), "html.parser")
-    
+    x = soup.find_all(match_class(["ProfileWarningTimeline"]))
+    if x[0].find('h2').text == "Caution: This account is temporarily restricted":
+       print "User account is temporarily restricted"    
     try:
         
         for i in soup.find_all('li', {"data-item-type":"tweet"}):

@@ -15,6 +15,10 @@ This program will extract the following and output to a CSV file with punctuatio
 - share_rtwt: integer value for number of times 'retweeted'
 
 
+This program can also check whether the twitter url account is having the warning:
+> Caution: This account is temporarily restricted
+
+
 ![Twitter](https://g.twimg.com/Twitter_logo_blue.png)
 
 ![Selenium Browser Automation](http://www.seleniumhq.org/images/big-logo.png)
